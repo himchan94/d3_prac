@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.tick line {
+  stroke: #c0a0bb;
+}
+
+.tick text {
+  fill: #635f5d;
+}
+
+.marks circle {
+  fill: #137b80;
+}
+.marks path {
+  stroke: #137b80;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.axis-label {
+  font-size: 2.5em;
+  fill: #137b80;
+}

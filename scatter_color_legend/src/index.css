@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+pre {
+  font-size: 7em;
+}
+.tick line {
+  stroke: #c0c0bb;
+}
+.tick text {
+  fill: #635f5d;
+}
+/* .mark {
+  fill: #137b80;
+} */
+.axis-label {
+  font-size: 2.5em;
+  fill: #635f5d;
+}
+
+#root {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+svg {
+  /* display: flexbox; */
+  margin: auto;
+}
+label,
+select {
+  font-size: 3em;
+}
+
+.menus-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Dropdown-root {
+  /* width: 50vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Dropdown-control {
+  width: 250px;
+  margin-right: 20px;
+  font-size: 1.5rem;
+  color: #635f5d;
+}
+
+.Dropdown-option {
+  max-width: 300px;
+}
+
+.x-select,
+.y-select {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #635f5d;
+}
+/* Dropdown-placeholder {
+  max-width: 500px;
+} */

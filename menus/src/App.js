@@ -56,7 +56,16 @@ function App() {
 
   return (
     <>
-      {" "}
+      <div>
+        <label htmlFor="pet-select">Choose a pet:</label>
+        <Dropdown
+          options={options}
+          id="pet-select"
+          onSelectedValueChage={setSelectedValue}
+          selectedValue={selectedValue}
+        />
+      </div>
+
       <svg width={width} height={height}>
         <g transform={`translate(${margin.left},${margin.top})`}>
           <AxisBottom
@@ -93,15 +102,6 @@ function App() {
           />
         </g>
       </svg>
-      <div>
-        <label htmlFor="pet-select">Choose a pet:</label>
-        <Dropdown
-          options={options}
-          id="pet-select"
-          onSelectedValueChage={setSelectedValue}
-          selectedValue={selectedValue}
-        />
-      </div>
     </>
   );
 }
